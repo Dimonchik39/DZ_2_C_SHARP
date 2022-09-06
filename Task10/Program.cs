@@ -6,13 +6,16 @@
 //  918 -> 1
 
 Console.Clear();
-Console.WriteLine("Введите первое число (трехзначное)");
+Console.WriteLine("Введите трехзначное число");
 int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число (трехзначное)");
-int num2 = Convert.ToInt32(Console.ReadLine());
 
+if (num1 > 99 && num1 < 1000)
+{
+    int num = (num1 % 100 / 10);
+    Console.WriteLine($"Вторая цифра данного числа {num}");
+}    
 
-
-
-
-
+else
+{
+    Console.WriteLine("Введите трехзначное число");
+}
